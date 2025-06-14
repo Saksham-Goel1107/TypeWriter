@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <title>TypeWriter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body oncontextmenu="return false;" style="user-select: none;">
+    <main>
+        <h1>
+            TypeWriter
+        </h1>
+        <div id="header">
+            <div id="info"></div>
+            <div id="buttons">
+                <span class="settings">
+                    <label for="timeSelect">Time: </label>
+                    <select id="timeSelect">
+                        <option value="15">15s</option>
+                        <option value="30" selected>30s</option>
+                        <option value="60">60s</option>
+                        <option value="120">2min</option>
+                        <option value="300">5min</option>
+                    </select>
+                </span>
+                <button id="newGameBtn">New game</button>
+            </div>
+        </div>
+        <div id="game" tabindex="0">
+            <div id="words"></div>
+            <div id="cursor"></div>
+            <div id="focus-error">Click here to focus</div>
+        </div>
+    </main>
+    <script src="typing.js"></script>
+</body>
+</html>
